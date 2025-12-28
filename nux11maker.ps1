@@ -42,7 +42,7 @@ Start-Transcript -Path "$ScratchDisk\nuxos11.log"
 
 $Host.UI.RawUI.WindowTitle = "NuxOS11 image creator"
 Clear-Host
-Write-Host "Welcome to the nuxos11 image creator! Release: 09-04-25"
+Write-Host "Welcome to the nuxos11 image creator! Release: 28-12-25"
 
 $hostArchitecture = $Env:PROCESSOR_ARCHITECTURE
 New-Item -ItemType Directory -Force -Path "$ScratchDisk\nuxos11\sources" | Out-Null
