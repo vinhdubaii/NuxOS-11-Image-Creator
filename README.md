@@ -73,7 +73,7 @@ Người dùng **tự chịu trách nhiệm** về bản quyền Windows.
 1. Chuẩn bị ISO Windows 11 gốc
 2. Chạy script `NuxOS11 Creator`
 3. Dán lệnh này vào Powershell: Set-ExecutionPolicy Bypass -Scope Process
-4. Chạy scripts: C:/path/to/your/tiny11/script.ps1 -ISO <letter> -SCRATCH <letter>
+4. Chạy scripts: C:/path/to/your/nuxos11/script.ps1 -ISO <letter> -SCRATCH <letter>
 5. Chọn:
    - Phiên bản
    - Thành phần cần loại bỏ
