@@ -141,7 +141,7 @@ Mọi đóng góp:
 
 ## 📎 Liên kết
 
-- Website: https://nuxos.my.canva.site/nuxos
+- Website: https://nuxproject.my.canva.site/
 - Tài liệu: (đang cập nhật)
 - Issue / Feedback: GitHub Repository
 
