@@ -37,6 +37,7 @@ Start-Sleep -Seconds 3
 Clear-Host
 
 $mainOSDrive = $env:SystemDrive
+$ScratchDisk = $mainOSDrive
 $hostArchitecture = $Env:PROCESSOR_ARCHITECTURE
 New-Item -ItemType Directory -Force -Path "$mainOSDrive\nuxos11\sources" >null
 $DriveLetter = Read-Host "Please enter the drive letter for the Windows 11 image"
@@ -206,9 +207,7 @@ if ($architecture -eq 'amd64') {
 } else {
     Write-Host "Unknown architecture: $architecture"
 }
-& 'takeown' '/f' "$mainOSDrive\scratchdir\Windows\System32\Microsoft-Edge-Webview" '/r'
-& 'icacls' "$mainOSDrive\scratchdir\Windows\System32\Microsoft-Edge-Webview" '/grant' "$($adminGroup.Value):(F)" '/T' '/C'
-Remove-Item -Path "$mainOSDrive\scratchdir\Windows\System32\Microsoft-Edge-Webview" -Recurse -Force
+
 Write-Host "Removing WinRE"
 & 'takeown' '/f' "$mainOSDrive\scratchdir\Windows\System32\Recovery" '/r'
 & 'icacls' "$mainOSDrive\scratchdir\Windows\System32\Recovery" '/grant' 'Administrators:F' '/T' '/C'
